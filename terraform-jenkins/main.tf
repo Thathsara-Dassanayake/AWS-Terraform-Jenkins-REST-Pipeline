@@ -7,7 +7,6 @@ module "networking" {
   cidr_private_subnet  = var.cidr_private_subnet
 }
 
-
 module "security_group" {
   source              = "./security-groups"
   ec2_sg_name         = "SG for EC2 to enable SSH(22), HTTPS(443) and HTTP(80)"
