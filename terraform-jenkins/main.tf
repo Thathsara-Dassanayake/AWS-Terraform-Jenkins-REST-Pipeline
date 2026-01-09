@@ -35,6 +35,8 @@ module "lb_target_group" {
   ec2_instance_id          = module.jenkins.jenkins_ec2_instance_ip
 }
 
+
+
 /*module "alb" {
   source                          = "./load-balancer"
   lb_name                         = "dev-proj-1-alb"
